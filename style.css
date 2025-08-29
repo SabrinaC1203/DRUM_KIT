@@ -3,21 +3,30 @@ body{
     background: url(images/drums-shawn-sim.jpg) no-repeat center center fixed;
     background-size: cover;
     margin: 0;
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 .keys{
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     text-align: center;
-    gap: 40px;
+    gap: 20px;
     color: white;
+    margin-top: auto;
+    align-content: center;
 }
-
-#key{
+.key{
     border: solid 2px;
-    padding: 10px 10px;
+    width: 70px;
+    height: 80px;
     background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 
@@ -26,11 +35,24 @@ p{
     text-transform: uppercase;
     color: rgb(184, 8, 8);
     font-weight: bold;
+    margin: 0;
+    padding: 0px 0px 5px 0px;
+}
+
+h1{
+    margin: 0;
+    padding: 10px 10px;
 }
 
 footer{
+    margin-top: auto;
     display: flex;
     justify-content: center;
-    align-content: flex-end;
     color: white;
+    padding: 10px;
+    font-size: 10px;
+}
+
+a{
+    color: aqua;
 }
