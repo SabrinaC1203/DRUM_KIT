@@ -27,10 +27,10 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    transition: all 0.07s;
 }
 
-
-p{
+span{
     font-size: 12px;
     text-transform: uppercase;
     color: rgb(184, 8, 8);
@@ -39,8 +39,9 @@ p{
     padding: 0px 0px 5px 0px;
 }
 
-h1{
+kbd{
     margin: 0;
+    font-size: 25px;
     padding: 10px 10px;
 }
 
@@ -55,4 +56,10 @@ footer{
 
 a{
     color: aqua;
+}
+
+.playing{
+    transform: scale(1.1);
+    border-color: #ffc600;
+    box-shadow: 0 0 10px #ffc600;
 }
